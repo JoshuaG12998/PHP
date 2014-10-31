@@ -7,7 +7,7 @@
 
 		//Checks if connection has a connection error
 	if($connection->connect_error){
-		die("Error: " . $connection->connection_error);
+		die("<p>Error: " . $connection->connection_error . "</p>");
 	}
 
 	$exists = $connection->select_db($database);
@@ -19,12 +19,12 @@
 
 	//Executes
 	if($query) {
-		echo "Successfully created database: " . $database;
+		echo "<p>Successfully created database: " . $database . "<p/>";
 	}
 }
 //Displays since database already exists
 	else {
-		echo "Database already exists.";
+		echo "<p>Database already exists.</p>";
 }
 
 
@@ -37,6 +37,14 @@
 			// creates post colum
 		 . "post text NOT NULL,"
 		 	//sets key to id
-		 . "PRIMARY KEY (id)");
+		 . "PRIMARY KEY (id))");
+		//if true
+	if($query) {
+		echo "<p>Seccessfully created table: posts</p>";
+	}
+	//if false
+	else{
+		echo "<p>$connection->error</p>";
+	}
 
 	$connection->close();
