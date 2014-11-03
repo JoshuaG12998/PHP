@@ -1,11 +1,8 @@
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
+
 	<?php
+			//insert header code here
+		require_once(__DIR__ . "/view/Header.php");
 		require_once(__DIR__ . "/Controller/create-db.php");
+			//insert footer code here
+		require_once(__DIR__ . "/view/Footer.php");
 	?>
-	</body>
-</html>
