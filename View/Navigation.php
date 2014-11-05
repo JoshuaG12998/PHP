@@ -4,7 +4,7 @@
 ?>
 <nav>
 	<ul>
-			<!-- \ means to look for root -->
+			<!-- \ means to look for root --> <!-- $path uses the path variable in Config.php-->
 		<li><a href="<?php echo $path . "Post.php"?>">Blog Post Form</a></li>
 	</ul>
 </nav>
