@@ -12,4 +12,8 @@
 		<label fir="post">Post: </label>
 		<textarea name="post"></textarea>
 	</div>
+			<!--Creates button -->
+	<div>
+		<button type="submit">Submit</button>
+	</div>
 </form>
