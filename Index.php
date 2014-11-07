@@ -1,4 +1,14 @@
+<html>
+		<head>
+		<title></title>
+			<link type="text/css" rel="stylesheet" href="CSS/style.css">
+			<link type="text/css" rel="stylesheet" href="CSS/bootstrap.min.css">
 
+				<style>
+
+				</style>
+		</head>
+<body>
 	<?php
 			//insert header code here
 		require_once(__DIR__ . "/view/Header.php");
@@ -8,3 +18,5 @@
 			//insert footer code here
 		require_once(__DIR__ . "/view/Footer.php");
 	?>
+</body>
+</html>
