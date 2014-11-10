@@ -10,9 +10,15 @@
 		</head>
 <body>
 <h2>Blog</h2>
+
+<!-- connects path to Config -->
+<?php
+require_once(__DIR__ . "/../model/Config.php");
+?>
+
 <h1>Create Blog Post</h1>
 
-<form>
+<form method="post" action="<?php echo $path . "Controller/create-post.php"; ?>">
 	<div>
 			<!-- Creates visual --> <!-- Creates text area -->
 		<label for="title">Title: </label>
