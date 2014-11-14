@@ -4,6 +4,7 @@
  <link rel="stylesheet" media="screen and (min-width: 0px)" type="text/css" href="CSS/ipad.css">
 <meta name="viewport" content="width=device-width">
 <meta name="viewport" content='width=768'>
+
 <style type="text/css"></style>
 </head>
 <body>
@@ -18,7 +19,7 @@
 	//saves information from submit button
 
 	//access' variables in database.php
-	require_once(__DIR__ . "/../model/database.php");
+	require_once(__DIR__ . "/../model/Config.php");
 
 	//opens connection
 	$connection = new mysqli($host, $username, $password, $database);
@@ -26,7 +27,7 @@
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
 
-		//true or not true. True will be stores in querry. False will not
+		//running a query on database. Inserting query to table "post" and sets value "posts"
 	$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'");
 
 	//true or false for querry
@@ -42,9 +43,11 @@ else {
 	//close connection
 	$connection->close();
 ?>
-
+<footer>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 <script type="text/javascript" href="js/bootstrap.min.js"></script>
+
+</footer>
 	</body>
 	</html>
