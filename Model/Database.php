@@ -16,4 +16,16 @@ class Database {
 		$this->password = $password;
 		$this->database = $database;
 	}
+
+	public function openConnection() {
+
+	}
+
+	public function closeConnection() {
+
+	}
+			//passes a string when we call for query
+	public function query($string) {
+
+	}
 }
