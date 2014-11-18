@@ -28,7 +28,10 @@ class Database {
 	}
 			//closes a connection
 	public function closeConnection() {
-
+		//checks if there is information present in variable. Return null if no
+		if(isset($this->connection)) {
+			$this->connection->close();
+		}
 	}
 			//passes a string when we call for query
 	public function query($string) {
