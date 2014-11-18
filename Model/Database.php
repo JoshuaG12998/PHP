@@ -16,11 +16,17 @@ class Database {
 		$this->password = $password;
 		$this->database = $database;
 	}
-
+			//opens a connection
 	public function openConnection() {
-
+		//establish new connection
+		$this->connection = mysqli($this->host, $this->username, $this->password, $this->database);
+					
+				//Checks if connection has a connection error
+		if($this->connection->connect_error){
+			die("<p>Error: " . $this->connection->connection_error . "</p>");
+		}
 	}
-
+			//closes a connection
 	public function closeConnection() {
 
 	}
