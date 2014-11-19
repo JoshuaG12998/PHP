@@ -35,6 +35,12 @@ class Database {
 	}
 			//passes a string when we call for query
 	public function query($string) {
-
+		$this->openConnection();
+			//querry's our connection
+		$query = $this->connection->query($string);
+			//close our connection
+		$this->closeConnection();
+			//sees id it's true or false
+		return $query;
 	}
 }
