@@ -2,8 +2,6 @@
 	//Directory of File. return of an include
 	require_once(__DIR__ . "/../model/Config.php");
 
-		//server (name of host), username (user that uses server process), password (empty password)
-	$connection = new mysqli($host, $username, $password);
 
 		//Checks if connection has a connection error
 	if($connection->connect_error){

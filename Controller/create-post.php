@@ -21,8 +21,6 @@
 	//access' variables in database.php
 	require_once(__DIR__ . "/../model/Config.php");
 
-	//opens connection
-	$connection = new mysqli($host, $username, $password, $database);
 	//filters input so no one can hack                   //sanitizes illegal characters
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
