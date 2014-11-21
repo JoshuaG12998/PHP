@@ -36,10 +36,6 @@ else {
 	echo "<p>$connection->error</p>";
 }
 
-
-
-	//close connection
-	$connection->close();
 ?>
 <footer>
 

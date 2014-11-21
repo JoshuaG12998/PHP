@@ -1,6 +1,8 @@
 <?php
-			//access post.php
-		$path = "/PHP/";
+		
+	require_once(__DIR__ . "/database.php");
+		//access post.php
+	$path = "/PHP/";
 
 	$host = "localhost";
 	$username = "root";
