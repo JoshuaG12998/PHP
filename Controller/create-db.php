@@ -4,7 +4,7 @@
 
 //stores a query
 			//creates ech post to have an id, a title, text, and a key
-	$query = $connection->query("CREATE TABLE posts ("
+	$query = $_SESSION["connection"]->query("CREATE TABLE posts ("
 			// creates ids for posts
 		 . "id int(11) NOT NULL AUTO_INCREMENT,"
 		 . "title varchar(255) NOT NULL,"
@@ -18,7 +18,7 @@
 	}
 	//if false
 	else{
-		echo "<p>$connection->error</p>";
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
 
 	

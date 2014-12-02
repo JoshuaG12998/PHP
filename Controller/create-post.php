@@ -26,14 +26,14 @@
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
 
 		//running a query on database. Inserting query to table "post" and sets value "posts"
-	$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'");
+	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post = '$post'");
 
 	//true or false for querry
 if($query) {
 	echo "<p>Successfully inserted post: $title</p>";	
 }
 else {
-	echo "<p>$connection->error</p>";
+	echo "<p>" . $_SESSION["connection"]->error . "</p>";
 }
 
 ?>
