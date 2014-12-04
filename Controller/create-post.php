@@ -24,13 +24,19 @@
 	//filters input so no one can hack                   //sanitizes illegal characters
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
+		//creates time
+	$date = new DateTime('today');
+		//sets timezone
+	$time = new DateTime('America/Los_Angeles');
 
 		//running a query on database. Inserting query to table "post" and sets value "posts"
 	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post = '$post'");
 
 	//true or false for querry
 if($query) {
-	echo "<p>Successfully inserted post: $title</p>";	
+	echo "<p>Successfully inserted post: $title</p>";
+		//creates date and time
+	echo "Posted on: " . $date->format("M/D/Y") . " at " . $time->format("g:i");	
 }
 else {
 	echo "<p>" . $_SESSION["connection"]->error . "</p>";
