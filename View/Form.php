@@ -14,6 +14,11 @@
 <!-- connects path to Config -->
 <?php
 require_once(__DIR__ . "/../model/Config.php");
+require_once(__DIR__ . "/../Controller/login-verify.php");
+
+if(authenticateUser()) {
+	die();
+}
 ?>
 
 <h1>Create Blog Post</h1>
