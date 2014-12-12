@@ -20,6 +20,12 @@
 
 	//access' variables in database.php
 	require_once(__DIR__ . "/../model/Config.php");
+	require_once(__DIR__ . "/../Controller/login-verify.php");
+
+if(!authenticateUser()) {
+	header("Location: " . $path . "Index.php");
+	die();
+}
 
 	//filters input so no one can hack                   //sanitizes illegal characters
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);

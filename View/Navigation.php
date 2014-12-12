@@ -1,6 +1,12 @@
 <?php
 	//requires config file here
 	require_once(__DIR__ . "/../Model/Config.php")
+	require_once(__DIR__ . "/../Controller/login-verify.php");
+
+if(!authenticateUser()) {
+	header("Location: " . $path . "Index.php");
+	die();
+}
 ?>
 <nav>
 	<ul>

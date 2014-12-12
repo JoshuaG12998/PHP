@@ -1,6 +1,12 @@
 <?php
 	//Directory of File. return of an include
 	require_once(__DIR__ . "/../model/Config.php");
+	require_once(__DIR__ . "/../Controller/login-verify.php");
+
+if(!authenticateUser()) {
+	header("Location: " . $path . "Index.php");
+	die();
+}
 
 //stores a query
 			//creates ech post to have an id, a title, text, and a key
