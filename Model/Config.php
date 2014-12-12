@@ -3,6 +3,8 @@
 	require_once(__DIR__ . "/database.php");
 		//preserves information to create only 1
 	session_start();
+	//creates new id
+	session_regenerate_id(true);
 		//access post.php
 	$path = "/PHP/";
 

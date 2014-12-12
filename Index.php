@@ -17,6 +17,7 @@
 		require_once(__DIR__ . "/Controller/create-db.php");
 			//insert footer code here
 		require_once(__DIR__ . "/view/Footer.php");
+		require_once(__DIR__ . "/Controller/read-posts.php");
 	?>
 </body>
 </html>
