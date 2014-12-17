@@ -1,7 +1,7 @@
 <html>
 <head>
 <title></title>
- <link rel="stylesheet" media="screen and (min-width: 0px)" type="text/css" href="CSS/ipad.css">
+<link type="text/css" rel="stylesheet" href="CSS/create.css">
 <meta name="viewport" content="width=device-width">
 <meta name="viewport" content='width=768'>
 
@@ -49,6 +49,7 @@ else {
 }
 
 ?>
+<button type="button" class="btn btn-info"><a href="PHP/Index.php">Return to home</a></button>
 <footer>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>

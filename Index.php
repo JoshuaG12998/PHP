@@ -1,14 +1,4 @@
-<html>
-		<head>
-		<title></title>
-			<link type="text/css" rel="stylesheet" href="CSS/style.css">
-			<link type="text/css" rel="stylesheet" href="CSS/bootstrap.min.css">
 
-				<style>
-
-				</style>
-		</head>
-<body>
 	<?php
 		require_once(__DIR__ . "/controller/login-verify.php");
 			//insert header code here
@@ -18,10 +8,8 @@
 			//Links navigation
 		require_once(__DIR__ . "/view/Navigation.php");
 		}	
-		require_once(__DIR__ . "/Controller/create-db.php");
+		//require_once(__DIR__ . "/Controller/create-db.php");
 			//insert footer code here
-		require_once(__DIR__ . "/view/Footer.php");
 		require_once(__DIR__ . "/Controller/read-posts.php");
+		require_once(__DIR__ . "/view/Footer.php");
 	?>
-</body>
-</html>

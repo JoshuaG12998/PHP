@@ -1,0 +1,142 @@
+body {
+	background-image: url(http://www.freebiesgallery.com/wp-content/uploads/2014/02/blurred-background-2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 2000px;
+	padding: 0;
+  	margin: 0;
+  	border: 0;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+h1 {
+	text-align: center;
+}
+h2 {
+	text-align: right;
+}
+	
+
+/*div from read-posts.php*/
+.posts {
+	border: 3px solid white
+}
+
+h3 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+}
+.container {
+  width: 705px;
+  height: 400px;
+  margin: 0 auto;
+}
+.logo {
+  font-weight: 400;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #E6E9ED;
+  font-size: 80px;
+  position: relative;
+  margin: 0;
+  padding-left: 170px;
+}
+
+.word {
+  color: #3BAFDA;
+}
+
+.right, .left {
+  font-family: arial;
+  font-size: 180px;
+  position: relative;
+  top: 55px;
+  color: #3BAFDA;
+  margin: 0 0 0 20px;
+}
+
+.text {
+  font-size: 30px;
+  position: absolute;
+  top: 168px;
+  left: 214px;
+  padding-top: 30px;
+  padding-left: 280px;
+}
+.left {
+  margin: 0 30px 0 0;
+}
+
+.submit {
+	padding-left: 300px;
+}
+
+
+
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700);
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  background: rgba(233, 233, 233, 0.8);
+  margin: 3em 2rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 1rem;
+  color: #000;
+  text-decoration: none;
+  transition: transform 0.3s ease 0s;
+  transform-origin: 50% 0px 0px;
+  transform-style: preserve-3d;
+}
+
+nav ul li a.current {
+  color: #7AB1C1;
+}
+
+nav ul li a:hover {
+  background: rgba(233, 233, 233, 0.8);
+  color: #000;
+  transform: rotateX(90deg) translateY(-22px);
+}
+
+nav ul li a::before {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  padding: 4px 0px;
+  text-align: center;
+  line-height: 50px;
+  background: none repeat scroll 0% 0% #7AB1C1;
+  color: #FFF;
+  content: attr(data-hover);
+  transition: #6363CE 0.3s ease 0s;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0px 0px;
+}
+@media screen and(max-width: 460px) {
+  max-width: 100%;
+}

@@ -1,5 +1,5 @@
 
-
+<link type="text/css" rel="stylesheet" href="CSS/form.css">
 <!-- connects path to Config -->
 <?php
 require_once(__DIR__ . "/../model/Config.php");
@@ -27,9 +27,13 @@ if(!authenticateUser()) {
 	</div>
 			<!--Creates button -->
 	<div>
-		<button type="submit">Submit</button>
+		<button type="submit" class="btn btn-info">Submit</button>
 	</div>
 </form>
 
+
+<button type="button" class="btn btn-info"><a href="index.php"><h3>Return back to blog</h3></a></button>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
 </html>

@@ -1,3 +1,16 @@
+<link type="text/css" rel="stylesheet" href="CSS/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="CSS/read.css">
+
+
+
+
+
+
+
+
+
+
+
 <?php
 
 	require_once(__DIR__ . "/../model/config.php");
